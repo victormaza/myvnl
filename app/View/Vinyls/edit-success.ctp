@@ -1,0 +1,1 @@
+<p>Le post a bien été édité.</p>
