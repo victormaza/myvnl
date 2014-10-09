@@ -1,4 +1,4 @@
-<h1><?= $vinyl['Vinyl']['title']; ?></h1>
+<h1><?= $vinyl['Artist']['name']; ?> - <?= $vinyl['Vinyl']['title']; ?></h1>
 <p><?= $vinyl['Genre']['name']; ?></p>
 <p><?= $vinyl['Vinyl']['year']; ?></p>
 <p><?= $vinyl['Vinyl']['tracklist']; ?></p>

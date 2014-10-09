@@ -62,14 +62,14 @@ class UsersController extends AppController
 		}else{
 			$this->Session->setFlash('Le lien d\'activation n\'est pas valide !', 'notif',array('type' =>'warning'));	
 		}
-		$this->redirect('/vinyls');
+		$this->redirect(array('controller' => 'vinyls', 'action' => 'index'));
 	}
 
 	public function login(){
 		if ($this->request->is('post')) {
 		    if ($this->Auth->login()) {
 		    	$this->Session->setFlash('Tu es connecté !','notif');
-		        return $this->redirect(array('controller' => 'Vinyls', 'action' => 'index'));
+		        return $this->redirect(array('controller' => 'vinyls', 'action' => 'index'));
 		    } else {
 		        $this->Session->setFlash('Identifiants incorrects !','notif',array('type' =>'warning'));
 		    }

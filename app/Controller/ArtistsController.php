@@ -1,7 +1,7 @@
 <?php
 
 	
-	class LabelsController extends AppController {
+	class ArtistsController extends AppController {
 
 
 	}
